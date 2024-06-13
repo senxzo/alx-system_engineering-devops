@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s,\n" . .. $(ls -1Ap | grep /$) $(ls -1Ap | grep -v /$) | tr '\n' ' ' | sed 's/, $/\n/' | sed 's/,/, /g'
+ls -p -A -m
