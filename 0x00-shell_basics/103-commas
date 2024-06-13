@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | sort -d -f | awk '{if ($1 ~ /^[0-9]/) {print $1","} else {print $1"/"}}' | tr -d '\n'; echo
+ls -p -A -m
