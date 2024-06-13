@@ -1,2 +1,2 @@
 #!/bin/bash
-echo ./, ../, $(ls -1A | grep '^[0-9A-Za-z]' | sort -d | sed -E 's/$/\//' | paste -sd ', ')
+ls -lap1m
