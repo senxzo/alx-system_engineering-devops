@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir my_dir; chmod 751 my_dir
+find . -maxdepth 1 -type d -name "my_dir" -exec mkdir {} \; -exec chmod 751 {} \;
