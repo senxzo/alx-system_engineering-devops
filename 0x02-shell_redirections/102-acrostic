@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -o '^uid: \([^ ]*\)' An\ Acrostic | cut -d' ' -f2
+cut -c1 An\ Acrostic | rev | tr -d '\n'
