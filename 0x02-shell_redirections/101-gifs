@@ -1,2 +1,8 @@
 #!/bin/bash
-find . -type f -iname '*.gif' -exec sh -c ' for f; do filename="${f##*/}" printf "%s\n" "${filename%.gif}" done' sh {} + | sort -f
+(find . -type f -iname '*.gif' -exec sh -c '
+    for f; do
+        # Remove path and .gif extension, then print
+        filename="${f##*/}"
+        printf "%s\n" "${filename%.gif}"
+    done
+' sh {} + | sort -f)
