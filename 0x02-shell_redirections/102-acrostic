@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '{print $1}' An\ Acrostic
+grep -o '^uid: \([^ ]*\)' An\ Acrostic | cut -d' ' -f2
