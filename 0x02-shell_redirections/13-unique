@@ -1,7 +1,2 @@
 #!/bin/bash
-
-read -a words
-
-for word in "${words[@]}"; do
-    echo "$word"
-done | sort | uniq -c | awk '$1 == 1 {print $2}'
+sort |uniq -u
