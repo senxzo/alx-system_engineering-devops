@@ -1,11 +1,2 @@
 #!/bin/bash
-
-# Ensure TRUEKNOWLEDGE is set or default to 0
-TRUEKNOWLEDGE="${TRUEKNOWLEDGE:-0}"
-
-# Perform addition
-result=$((128 + TRUEKNOWLEDGE))
-
-# Print the result followed by a new line
-echo $result
-
+export TRUEKNOWLEDGE=$((128 + TRUEKNOWLEDGE))
